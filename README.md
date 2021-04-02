@@ -22,11 +22,20 @@ _In brief, this project shows the utilization of basic loops_
 1.  First test
 
     + Test: "It should return _"Won't you be my neighbor?"_ if number 3 is an element of an array."
+    + Describe: exeptionThree()
+    + Code:
+      + const usersNumbers = [0,1,2,3]
+      + exeptionThree(usersNumbers, 3)
+    + Expected Output: _"Won't you be my neighbor?"_
+
+    1.  Second test
+
+    + Test: "If numbers 1, 2, or 3 are elements of the array, the return should be "Beep!", "Boop!", "Won't you be my neighbor?" respectively. 
     + Describe: exeptionsFinder()
     + Code:
       + const usersNumbers = [0,1,2,3]
-      + exeptionsFinder(usersNumbers, 3)
-    + Expected Output: _"Won't you be my neighbor?"_
+      + exeptionsFinder(usersNumbers, 2)
+    + Expected Output: _"Boop!"_
 
 ## Setup/Installation Requirements
 

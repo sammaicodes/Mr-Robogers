@@ -2,7 +2,7 @@
 
 const usersNumbers = [0,1,2,3]
 
-function exeptionsFinder(usersNumbers, exeption) {
+function exeptionThree(usersNumbers, exeption) {
   for (let i = 0; i < usersNumbers.length; i += 1) {
     let element = usersNumbers[i]
     console.log(element)
@@ -11,4 +11,17 @@ function exeptionsFinder(usersNumbers, exeption) {
     };
   }
   return false
+}
+
+
+function exeptionsFinder(usersNumbers, exeption) {
+  for (let i = 0; i < usersNumbers.length; i += 1) {    
+    if (3 === exeption) {
+      return "Won't you be my neighbor?";
+    }else if(2 === exeption){
+      return "Boop!"
+    }else if(1 === exeption){
+      return "Beep!"
+    }
+  }
 }
