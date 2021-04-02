@@ -45,6 +45,10 @@ _In brief, this project shows the utilization of basic loops_
       + splitMoreThanOneDigitNumbers(7721)
     + Expected Return: [7,7,2,1]
 
+3.  Fourth test
+
+    + Test: "It should print all numbers that are not exception."
+
 
 ## Setup/Installation Requirements
 
