@@ -1,10 +1,32 @@
-for (let i = 0; i<=5; i += 1){
-  console.log(i)
+$(document).ready(function(){
+  event.preventDefault()
+  $("form#game").submit(function(event) {
+    
+
+    let usersNumber = []
+    $("input.number").each(function(i) {
+      usersNumber[i] = $(this).val()
+    })
+
+    let range = []
+    usersNumber.forEach(function(element){
+      range.push(element)
+    })
+
+    range.forEach(function(element){
+      $("#pick").append(element)
+    })
+
+  // for (let i = 0; i<=usersNumber; i += 1){
+  //   console.log(i)
+  //   }
+
   }
+}
 
 
 ////First test
-const usersNumbers = [0,1,2,3]
+// const usersNumbers = [0,1,2,3]
 
 function exeptionThree(usersNumbers, exeption) {
   for (let i = 0; i < usersNumbers.length; i += 1) {
