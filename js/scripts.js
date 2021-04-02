@@ -8,10 +8,13 @@ $(document).ready(function(){
 
 
  
+function createArray(neighbor){
+  const emptyArray = []
 
-  // for (let i = 0; i<=usersNumber; i += 1){
-  //   console.log(i)
-  //   }
+  for (let i = 0; i<=neighbor; i += 1){
+  let range = emptyArray.push(i)
+  }
+}
 
 
 ////First test
