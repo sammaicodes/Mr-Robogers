@@ -47,8 +47,12 @@ _In brief, this project shows the utilization of basic loops_
 
 3.  Fourth test
 
-    + Test: "It should print all numbers that are not exception."
-
+    + Test: "It should print all numbers that are not exception, and it they are, it will print 'exception'."
+    + Describe: printExcept(nonExceptions)
+    + Code:
+      + const userInput = [0,3,4,7,8,1,6,2]
+      + printExcept(userInput)
+    + Expected Outcome: 0 exception 4 7 8 exception 6 exception
 
 ## Setup/Installation Requirements
 
