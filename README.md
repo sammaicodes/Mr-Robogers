@@ -1,6 +1,6 @@
 # Mr. Robogers Neighborhood
 
-####  A Project Implementing Basic HTML and CSS
+####  A Project Implementing Looping and TDD
 
 #### By _**Sammai Gutierrez**_
 
@@ -11,12 +11,19 @@
 * _HTML_
 * _CSS_
 * _GitBash_
+* _jQuery_
 
 ## Description
 
-_In brief, this project shows the utilization of basic structure and implementation of HTML and CSS._
+_In brief, this project shows the utilization of basic loops_
 
-_You may access this project at https://sammaicodes.github.io/First-Friday-Project/_
+## _Test-Driven Development_
+
+* _Describe: exeptionsFinder()_
+  _Code:_
+        _............._ 
+        _exeptionsFinder(3)_
+  _Expected Output: "Won't you be my neighbor?"
 
 ## Setup/Installation Requirements
 
