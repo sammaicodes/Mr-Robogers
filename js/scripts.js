@@ -1,4 +1,9 @@
+for (let i = 0; i<=5; i += 1){
+  console.log(i)
+  }
 
+
+////First test
 const usersNumbers = [0,1,2,3]
 
 function exeptionThree(usersNumbers, exeption) {
@@ -11,7 +16,7 @@ function exeptionThree(usersNumbers, exeption) {
   }
   return false
 }
-
+////Second Test
 function exeptionsFinder(usersNumbers, exeption) {
   for (let i = 0; i < usersNumbers.length; i += 1) {    
     if (3 === exeption) {
@@ -23,14 +28,14 @@ function exeptionsFinder(usersNumbers, exeption) {
     }
   }
 }
-
+////Third Test
 function splitMoreThanOneDigitNumbers(digit){
   let conversion = digit.toString().split('');
   let actualNumbers = conversion.map(Number)
   return actualNumbers
 }
 
-// Test: "It should print all numbers that are not exception."
+////Fourth Test: 
 
 // const nonExceptions = [0,3,4,7,8,1,6,2]
 function printExcept(nonExceptions){
