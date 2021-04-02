@@ -19,11 +19,14 @@ _In brief, this project shows the utilization of basic loops_
 
 ## _Test-Driven Development_
 
-* _Describe: exeptionsFinder()_
-  _Code:_
-        _............._ 
-        _exeptionsFinder(3)_
-  _Expected Output: "Won't you be my neighbor?"
+1.  First test
+
+    + Test: "It should return _"Won't you be my neighbor?"_ if number 3 is an element of an array."
+    + Describe: exeptionsFinder()
+    + Code:
+      + const usersNumbers = [0,1,2,3]
+      + exeptionsFinder(usersNumbers, 3)
+    + Expected Output: _"Won't you be my neighbor?"_
 
 ## Setup/Installation Requirements
 
