@@ -25,3 +25,9 @@ function exeptionsFinder(usersNumbers, exeption) {
     }
   }
 }
+
+function splitMoreThanOneDigitNumbers(digit){
+  let conversion = digit.toString().split('');
+  let actualNumbers = conversion.map(Number)
+  return actualNumbers
+}
