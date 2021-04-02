@@ -1,28 +1,17 @@
 $(document).ready(function(){
-  event.preventDefault()
   $("form#game").submit(function(event) {
-    
+    event.preventDefault()
+    const neighbor = $("#pick").val()
+    $("#result").html(neighbor)
+  })
+})
 
-    let usersNumber = []
-    $("input.number").each(function(i) {
-      usersNumber[i] = $(this).val()
-    })
 
-    let range = []
-    usersNumber.forEach(function(element){
-      range.push(element)
-    })
-
-    range.forEach(function(element){
-      $("#pick").append(element)
-    })
+ 
 
   // for (let i = 0; i<=usersNumber; i += 1){
   //   console.log(i)
   //   }
-
-  }
-}
 
 
 ////First test
