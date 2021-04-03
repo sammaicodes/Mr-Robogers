@@ -62,6 +62,16 @@ _In brief, this project shows the utilization of basic loops_
       + createArray(5)
     + Expected Outcome: [0, 1, 2, 3, 4, 5]
 
+6. Sixth test
+
+    + Test: 
+        + "Functions printExept() and exeptionsFinder() are modified. Together, they are supposed to print the elements in the array except for the exceptions which it will print its corresponding exception."
+    +  Describe: printExcept(nonExceptions) and exeptionsFinder(number)
+    + Code: 
+      + const test = [0,3,4,7,8,1,6,2]
+      + printExcept(test)
+    + Expected Outcome: 0 Won't you be my neighbor? 4 7 8 Beep! 6 Boop!
+
 
 ## Setup/Installation Requirements
 

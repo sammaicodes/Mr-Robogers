@@ -51,8 +51,7 @@ function createArray(neighbor){  //expected to get back [0, 1, 2, 3, 4, 5] if us
   return roboResponse
   }
 
-//// Sixth Test: functions printExept + exeptionsFinder are modified and tested together.
-////             Together, they are supposed to print the elements in the array except for the exception print its corresponding exception.
+//// Sixth Test
 function printExcept(nonExceptions){
   for (let i = 0; i < nonExceptions.length; i += 1) { 
       let element = nonExceptions[i]
