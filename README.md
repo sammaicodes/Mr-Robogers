@@ -19,7 +19,7 @@ _In brief, this project shows the utilization of loops and functions together wi
 
 ## _Specifications, Test-Driven Development_
 
-1.  First test
+1. First test
 
     + Test: "It should return _"Won't you be my neighbor?"_ if number 3 is an element of an array."
     + Describe: exeptionThree(usersNumbers, exeption)
@@ -37,7 +37,7 @@ _In brief, this project shows the utilization of loops and functions together wi
       + exeptionsFinder(usersNumbers, 2)
     + Expected Output: _"Boop!"_
 
-3.  Third test
+3. Third test
 
     + Test: "It should separate more than one digit numbers, and store them into an array.
     + Describe: splitMoreThanOneDigitNumbers(digit)
@@ -45,7 +45,7 @@ _In brief, this project shows the utilization of loops and functions together wi
       + splitMoreThanOneDigitNumbers(7721)
     + Expected Return: [7,7,2,1]
 
-4.  Fourth test
+4. Fourth test
 
     + Test: "It should print all numbers that are not exception, and it they are, it will print 'exception'."
     + Describe: printExcept(nonExceptions)
@@ -84,9 +84,17 @@ _In brief, this project shows the utilization of loops and functions together wi
     + Test: "It will check if any element in an array is a more than 1 digit number."
     + Describe: moreThanTwoDigitNumbers(greaterThan9)
     + Code:
-        + const check = [1, 23, 22]
-        + moreThanTwoDigitNumbers(check)
+      + const check = [1, 23, 22]
+      + moreThanTwoDigitNumbers(check)
     + Expected Outcome: 23 22
+
+9. Ninth test
+    + Test: "It will return an array whom its elements are arrays containing more than 1 digit numbers split into its constituents."
+    + Describe: moreThanTwoDigitNumbers(greaterThan9) and splitMoreThanOneDigitNumbers(digit)
+    + Code: 
+      + const check = [1, 23, 22];
+      + moreThanTwoDigitNumbers(check)
+    + Expected Outcome: [[2,3],[2,2]]
 
 
 ## Setup/Installation Requirements

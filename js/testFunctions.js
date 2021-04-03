@@ -122,4 +122,22 @@ function exeptionsFinder(number) {
   }
 }
 
+////Ninth Test
+function moreThanTwoDigitNumbers(greaterThan9){ 
+  let digits = []
+  for (let i = 0; i < greaterThan9.length; i += 1){ 
+    let element = greaterThan9[i]
+    if (element > 9){
+      digits.push(splitMoreThanOneDigitNumbers(element))
+    }   
+  }
+  return digits
+}
+
+function splitMoreThanOneDigitNumbers(digit){
+let conversion = digit.toString().split('');
+let actualNumbers = conversion.map(Number)
+return actualNumbers
+}
+
 
