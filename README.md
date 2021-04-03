@@ -15,9 +15,9 @@
 
 ## Description
 
-_In brief, this project shows the utilization of basic loops_
+_In brief, this project shows the utilization of loops and functions together with user input_
 
-## _Test-Driven Development_
+## _Specifications, Test-Driven Development_
 
 1.  First test
 
@@ -78,6 +78,15 @@ _In brief, this project shows the utilization of basic loops_
     + Describe: printExcept(neighbor)
     + Code: printExcept(5)
     + Expected Outcome: 0 Beep! Boop! Won't you be my neighbor? 4 5
+
+8. Eight test
+
+    + Test: "It will check if any element in an array is a more than 1 digit number."
+    + Describe: moreThanTwoDigitNumbers(greaterThan9)
+    + Code:
+        + const check = [1, 23, 22]
+        + moreThanTwoDigitNumbers(check)
+    + Expected Outcome: 23 22
 
 
 ## Setup/Installation Requirements

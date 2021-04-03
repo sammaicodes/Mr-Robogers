@@ -43,7 +43,7 @@ function printExcept(nonExceptions){
 }
 
 //// Fifth Test: 
-function createArray(neighbor){  //expected to get back [0, 1, 2, 3, 4, 5] if user inputs 5, createArray(5)
+function createArray(neighbor){  
   let roboResponse = []
   for (let i = 0; i <= neighbor; i++) {
     roboResponse.push(i);
@@ -110,6 +110,16 @@ function exeptionsFinder(number) {
     }
   }
   return exception
+}
+
+////Eighth Test
+  function moreThanTwoDigitNumbers(greaterThan9){
+  for (let i = 0; i < greaterThan9.length; i += 1){ 
+    let element = greaterThan9[i]
+    if (element > 9){
+      alert(element)
+    }   
+  }
 }
 
 
