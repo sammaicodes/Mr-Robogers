@@ -2,63 +2,48 @@ $(document).ready(function(){
   $("form#game").submit(function(event) {
     event.preventDefault()
     const neighbor = $("#pick").val()
-    $("#result").html(neighbor)
+    $("#result").html(createArray(neighbor))
   })
 })
 
+///5th test
+// function createArray(neighbor){  //expected to get back [0, 1, 2, 3, 4, 5] if user inputs 5, createArray(5)
+//   let roboResponse = []
+//   for (let i = 0; i <= neighbor; i++) {
+//     roboResponse.push(i);
+//   }
+//   return roboResponse
+//   }
 
- 
-function createArray(neighbor){
-  const emptyArray = []
-
-  for (let i = 0; i<=neighbor; i += 1){
-  let range = emptyArray.push(i)
+function createArray(neighbor){  //expected to get back [0, 1, 2, 3, 4, 5] if user inputs 5, createArray(5)
+  let roboResponse = []
+  for (let i = 0; i <= neighbor; i++) {
+    roboResponse.push(i);
   }
-}
-
-
-////First test
-// const usersNumbers = [0,1,2,3]
-
-function exeptionThree(usersNumbers, exeption) {
-  for (let i = 0; i < usersNumbers.length; i += 1) {
-    let element = usersNumbers[i]
-    console.log(element)
-    if (element === exeption) {
-      return "Won't you be my neighbor?";
-    };
+  return roboResponse
   }
-  return false
-}
-////Second Test
-function exeptionsFinder(usersNumbers, exeption) {
-  for (let i = 0; i < usersNumbers.length; i += 1) {    
-    if (3 === exeption) {
-      return "Won't you be my neighbor?";
-    }else if(2 === exeption){
-      return "Boop!"
-    }else if(1 === exeption){
-      return "Beep!"
-    }
-  }
-}
-////Third Test
-function splitMoreThanOneDigitNumbers(digit){
-  let conversion = digit.toString().split('');
-  let actualNumbers = conversion.map(Number)
-  return actualNumbers
-}
 
-////Fourth Test: 
-
-// const nonExceptions = [0,3,4,7,8,1,6,2]
 function printExcept(nonExceptions){
   for (let i = 0; i < nonExceptions.length; i += 1) { 
       let element = nonExceptions[i]
       if (element === 1 || element === 2 || element === 3 ) {
-        console.log("exception")
+        console.log(exeptionsFinder(nonExceptions[i]))
       }else {
         console.log(element)
     }
   }
+}
+
+function exeptionsFinder(number) {
+	let exception
+  for (let i = 0; i < number; i += 1) { 
+    if (3 === number) {
+      exception =  "Won't you be my neighbor?";
+    }else if(2 === number){
+      exception =  "Boop!"
+    }else if(1 === number){
+      exception = "Beep!"
+    }
+  }
+  return exception
 }

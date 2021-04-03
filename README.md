@@ -45,7 +45,7 @@ _In brief, this project shows the utilization of basic loops_
       + splitMoreThanOneDigitNumbers(7721)
     + Expected Return: [7,7,2,1]
 
-3.  Fourth test
+4.  Fourth test
 
     + Test: "It should print all numbers that are not exception, and it they are, it will print 'exception'."
     + Describe: printExcept(nonExceptions)
@@ -53,6 +53,15 @@ _In brief, this project shows the utilization of basic loops_
       + const userInput = [0,3,4,7,8,1,6,2]
       + printExcept(userInput)
     + Expected Outcome: 0 exception 4 7 8 exception 6 exception
+
+5. Fifth test 
+
+    + Test: "It should return an array with elements up to the desired users input digit"
+    + Describe: createArray(neighbor)
+    + Code:
+      + createArray(5)
+    + Expected Outcome: [0, 1, 2, 3, 4, 5]
+
 
 ## Setup/Installation Requirements
 
