@@ -15,18 +15,41 @@ function createArray(neighbor){
   }
 
 function printExcept(neighbor){
-	let response = []
-	let nonExceptions = createArray(neighbor)
+  let response = []
+  let nonExceptions = createArray(neighbor)
   for (let i = 0; i < nonExceptions.length; i += 1) { 
     let element = nonExceptions[i]
     if (element === 1 || element === 2 || element === 3 ) {
-      response.push(exeptionsFinder(nonExceptions[i]))
+      response.push(exeptionsFinder(element))
+    }else if(element > 9){
+      response.push(moreExceptions(element)) 
     }else {
       response.push(element)
     }
   }
   let finalResponse = response.toString()
   return finalResponse
+}
+
+function moreExceptions(digits){
+  let result
+  let splits = splitMoreThanOneDigitNumbers(digits)
+  for (let i = 0; i < splits.length; i += 1) { 
+    if(splits.includes(3)){
+      result = exeptionsFinder(3)
+    }else if(splits.includes(2)){
+      result = exeptionsFinder(2)
+    }else if(splits.includes(1)){
+      result = exeptionsFinder(1)
+    }
+    return result 
+  }
+}
+
+function splitMoreThanOneDigitNumbers(digit){
+  let conversion = digit.toString().split('');
+  let actualNumbers = conversion.map(Number)
+  return actualNumbers
 }
 
 function exeptionsFinder(number) {
