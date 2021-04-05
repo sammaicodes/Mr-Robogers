@@ -11,13 +11,16 @@
 * _HTML_
 * _CSS_
 * _GitBash_
+* _JavaScript_
 * _jQuery_
+* _Bootstrap_
 
 ## Description
 
-_In brief, this project shows the utilization of loops and functions together with user input_
+_In brief, this project shows the utilization of TDD, loops and functions together with user input_
 
-## _Specifications, Test-Driven Development_
+## _Specifications, Test-Driven Development (TDD)_
+### _For the tests, refer to the testFunctions.js file
 
 1. First test
 
@@ -116,5 +119,3 @@ _In brief, this project shows the utilization of loops and functions together wi
 ## License
 
 _MIT &copy; 2021 Sammai Gutierrez_
-
-## Contact Information
