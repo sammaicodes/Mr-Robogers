@@ -19,7 +19,9 @@ function exeptionsFinder(usersNumbers, exeption) {
       return "Boop!"
     }else if(1 === exeption){
       return "Beep!"
-    }
+    }else {
+      exception = ` ${number} `
+    } 
   }
 }
 
@@ -72,7 +74,9 @@ function exeptionsFinder(number) {
       exception =  "Boop!"
     }else if(1 === number){
       exception = "Beep!"
-    }
+    }else {
+      exception = ` ${number} `
+    } 
   }
   return exception
 }
@@ -107,7 +111,9 @@ function exeptionsFinder(number) {
       exception =  "Boop!"
     }else if(1 === number){
       exception = "Beep!"
-    }
+    }else {
+      exception = ` ${number} `
+    }    
   }
   return exception
 }
